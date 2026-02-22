@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Surprise | For My Best Friend</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- PASSWORD GATE -->
+    <div id="passwordGate" class="password-gate">
+        <div class="gate-card">
+            <h2>🔐 Password Protected</h2>
+            <p>Enter the password to see the surprise</p>
+            <input type="password" id="passwordInput" placeholder="Type password..." autocomplete="off">
+            <button id="unlockBtn">Unlock</button>
+            <div id="errorMsg" class="error-msg"></div>
+            <div class="hint">💡 Hint: Jo main tumhe bulata hu</div>
+        </div>
+    </div>
+
+    <!-- AUDIO -->
+    <audio id="bgMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- LANDING PAGE -->
+    <div id="landingPage" class="landing-page hidden">
+        <!-- Creation Tag -->
+        <div class="creation-tag">
+            <span>✨Created by KD Prajapati</span>
+        </div>
+        
+        <div id="background" class="background"></div>
+        <div id="canvas" class="canvas">
+
+            <!-- Hero Photo Section -->
+            <div class="hero-section">
+                <div class="hero-frame">
+                    <img id="heroImg" src="pic1.jpg" alt="Friend Photo">
+                </div>
+                <div class="hero-text">Tum Meri Dost Nahi Sabse Pyari Dost Ho ❤️</div>
+                <div class="hero-paragraph">
+                    Sach bolu?
+Zindagi mein bohot log milte hain, par kuch hi log “reh jaate” hain.
+Tum unme se ho.
+
+Tumhari hasi sirf cute nahi, contagious hai.
+Tumhara support sirf words nahi, comfort hai.
+Aur tumhari dosti sirf time pass nahi, blessing hai.
+
+Kabhi kabhi lagta hai universe ne randomly nahi, soch samajh ke milaya hai hume.
+Opposite bhi hain, similar bhi… aur shayad isi liye perfect balance bhi.
+
+Bas ek baat yaad rakhna —
+chahe life kitni bhi busy ho jaaye,
+tumhari value kabhi kam nahi hogi.
+
+Lucky hoon ki tum meri bestie ho ❤️
+                </div>
+            </div>
+
+            <!-- Floating Container -->
+            <div id="floatingItems" class="floating-items"></div>
+
+            <!-- Central Message -->
+            <h1 id="centralMsg" class="central-message">Veduuuu ye tumare liye</h1>
+        </div>
+
+        <!-- Shuffle Button -->
+        <button id="shuffleBtn" class="shuffle-btn">🔄 Shuffle</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
