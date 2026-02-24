@@ -1,5 +1,5 @@
 // ==================== CONFIG ====================
-const PASSWORD = 'veduu';
+const PASSWORD = 'motee';
 const NUM_FLOAT_ITEMS = 30;
 const HERO_IMAGE_CHANGE_TIME = 3000; // Change hero image every 4 seconds
 
@@ -242,4 +242,5 @@ window.addEventListener('load', () => {
     // Focus on password input
     passwordInput.focus();
 });
+
 
